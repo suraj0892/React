@@ -1,0 +1,8 @@
+fileignoreconfig:
+- filename: .idea/sonarlint/issuestore/index.pb
+  checksum: f1c6958cda67f0a43010a15e38654854f8c04ffe77cc536e0d326d2051f8353c
+- filename: src/components/IndexAsKey.js
+  checksum: 9ff1ebc94f86b82237c604abee9dc39869abb1fa3d7b40e4dd8a32536feb96a3
+- filename: src/components/FragmentsDemo.js
+  checksum: 96a21adb780486504575cbd7f1fe74a7d7e3f092859179d26dd43c86fa35e821
+version: ""
