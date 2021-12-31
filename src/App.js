@@ -31,7 +31,8 @@ import { RenderpropsExample } from './components/RenderPropsExample/RenderpropsE
 import { render } from '@testing-library/react';
 import { UserContextProvider } from './components/Context/ContextDemo';
 import ComponentB from './components/Context/ComponentB';
-
+import ComponentC from './components/Context/ComponentC';
+import ComponentD from './components/Context/ComponentD';
 function App() {
   return (
     <div className="App">
@@ -39,6 +40,9 @@ function App() {
       <UserContextProvider value="Suraj">
         <ComponentB/>
       </UserContextProvider>
+
+     <ComponentC/>
+     <ComponentD/>
 
       {/* <RenderpropsExample render={(count, clickHandler) => (<ButtonRenderCounter count={count} clickHandler={clickHandler}/>)}/> */}
       {/* <RenderpropsExample>
