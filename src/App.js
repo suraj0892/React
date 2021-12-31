@@ -29,19 +29,25 @@ import ButtonRenderCounter from './components/RenderPropsExample/ButtonCounter'
 import OnMouseOverRenderCounter from './components/RenderPropsExample/OnMouseOverComponent'
 import { RenderpropsExample } from './components/RenderPropsExample/RenderpropsExample';
 import { render } from '@testing-library/react';
+import { UserContextProvider } from './components/Context/ContextDemo';
+import ComponentB from './components/Context/ComponentB';
 
 function App() {
   return (
     <div className="App">
 
+      <UserContextProvider value="Suraj">
+        <ComponentB/>
+      </UserContextProvider>
+
       {/* <RenderpropsExample render={(count, clickHandler) => (<ButtonRenderCounter count={count} clickHandler={clickHandler}/>)}/> */}
-      <RenderpropsExample>
+      {/* <RenderpropsExample>
         {
           (count, clickHandler) => {
             return (<OnMouseOverRenderCounter count={count} clickHandler={clickHandler} />)
           }
         }
-      </RenderpropsExample>
+      </RenderpropsExample> */}
 {/* <MouseOverCounter/>
 <ButtonCounter/> */}
 
